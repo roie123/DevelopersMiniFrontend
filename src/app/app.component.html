@@ -1,0 +1,41 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+    <h1 class="text-center">Team Design Section with Pure CSS Effect</h1>
+
+	
+	<div *ngFor="let developer of developers" class="container">
+	<div  class="row">
+	
+	<!--team-1-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="http://placehold.it/110x110/9c27b0/fff?text=Dilip" class="img-fluid" />
+	<h3>{{developer.name}}</h3>
+	<p>{{developer.id}}</p>
+	</div>
+	<div class="team-back" > 
+    <h6 >mistakes -></h6>
+	<span *ngFor="let mistake of developer.mistakes" >
+  {{mistake.description}}
+	</span>
+	</div>
+	
+	</div>
+	</div>
+  </div>
+	<!--team-1-->
+	
+
+
+
+<!-- <div *ngFor="let developer of developers">
+ 
+  <h1>developer found</h1>
+ <div *ngFor="let mistake of developer.mistakes"> {{mistake.description}}</div>
+</div> -->
